@@ -23,8 +23,8 @@ export default class Layout extends React.Component {
   }
 }
 
-const AppLink = ({ link, title }) => (
-  <a className="App-link" href={link} target="_blank" rel="noopener noreferrer">
+const AppLink = ({ href, title }) => (
+  <a className="App-link" href={href} target="_blank" rel="noopener noreferrer">
     {title}
   </a>
 );
