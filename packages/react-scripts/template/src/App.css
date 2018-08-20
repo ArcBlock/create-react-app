@@ -8,3 +8,7 @@
   border: 1px solid #CCCCCC;
   border-radius: 5px;
 }
+
+.alert {
+  color: red;
+}
