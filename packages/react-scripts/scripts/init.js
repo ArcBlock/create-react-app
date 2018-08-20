@@ -130,6 +130,14 @@ module.exports = function(
     }
   }
 
+  // install extra dependencies
+  args = ['add', '@arcblock/ocap-js', 'babel-polyfill'];
+  const proc = spawn.sync(command, args, { stdio: 'inherit' });
+  if (proc.status !== 0) {
+    console.error(`\`${command} ${args.join(' ')}\` failed`);
+    return;
+  }
+
   // Display the most elegant way to cd.
   // This needs to handle an undefined originalDirectory for
   // backward compatibility with old global-cli's.
