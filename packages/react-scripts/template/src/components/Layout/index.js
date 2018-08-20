@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-links">
             <AppLink
-              href="https://ocap.arcblock.io"
+              href="https://github.com/ArcBlock/ocap-javascript-sdk/tree/master/packages/ocap-js#usage"
               title="SDK Documentation"
             />
             <AppLink href="https://ocap.arcblock.io" title="Go Playground" />
