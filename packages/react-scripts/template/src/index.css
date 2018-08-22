@@ -13,3 +13,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+pre {
+  background: #F0F0F0;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.alert {
+  color: red;
+}
