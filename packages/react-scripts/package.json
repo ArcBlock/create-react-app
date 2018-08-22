@@ -64,7 +64,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
-    "@arcblock/ocap-js": "^0.3.2",
+    "@arcblock/ocap-js": "^0.3.9",
     "babel-polyfill": "^6.26.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

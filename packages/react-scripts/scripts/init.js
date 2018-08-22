@@ -131,7 +131,14 @@ module.exports = function(
   }
 
   // install extra dependencies
-  args = ['add', '@arcblock/ocap-js', 'babel-polyfill'];
+  args = [
+    'add',
+    '@arcblock/ocap-js',
+    'babel-polyfill',
+    'react-router-dom',
+    'semantic-ui-css',
+    'semantic-ui-react',
+  ];
   const proc = spawn.sync(command, args, { stdio: 'inherit' });
   if (proc.status !== 0) {
     console.error(`\`${command} ${args.join(' ')}\` failed`);
