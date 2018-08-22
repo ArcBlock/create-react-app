@@ -44,12 +44,25 @@ class SubscriptionDemo extends Component {
 
     return (
       <Layout>
-        <h2>Subscription Demo: ETH.newBlockMined</h2>
-        {subscribed || <p>Try to subscribe to ETH.newBlockMined</p>}
-        {subscribed && <p>ETH.newBlockMined subscription success</p>}
+        <h2>
+          Subscription Demo: ${dataSource.name.toUpperCase()}.newBlockMined
+        </h2>
+        {subscribed || (
+          <p>
+            Try to subscribe to ${dataSource.name.toUpperCase()}.newBlockMined
+          </p>
+        )}
+        {subscribed && (
+          <p>
+            ${dataSource.name.toUpperCase()}.newBlockMined subscription success
+          </p>
+        )}
         {message && (
           <div className="App-json">
-            <p>New ETH Blocked Mined at {timestamp}, detail as follows:</p>
+            <p>
+              New ${dataSource.name.toUpperCase()} Blocked Mined at {timestamp},
+              detail as follows:
+            </p>
             <pre>
               <code>{JSON.stringify(message, true, '  ')}</code>
             </pre>
